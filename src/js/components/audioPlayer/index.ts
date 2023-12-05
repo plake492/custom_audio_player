@@ -76,8 +76,6 @@ export const init = () => {
      * Get the buffered amount and update the CSS variable
      */
     const displayBufferedAmount = () => {
-      console.log("audioEl.buffered ==>", audioEl.buffered)
-
       const bufferedAmount =
         audioEl.buffered.length > 0
           ? Math.floor(audioEl.buffered.end(audioEl.buffered.length - 1))
@@ -148,6 +146,7 @@ export const init = () => {
       durationEl!.textContent = convertTime(duration)
       seekSliderEl!.max = Math.floor(duration).toString()
       displayBufferedAmount()
+      console.dir(audioEl)
     }
 
     /**
