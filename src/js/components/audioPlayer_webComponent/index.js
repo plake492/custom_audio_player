@@ -1,3 +1,4 @@
+// @ts-nocheck
 /**
  * Create a bem class string
  * @param base the base class name
