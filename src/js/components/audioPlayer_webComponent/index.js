@@ -184,7 +184,7 @@ const styles = `
     opacity: 1;
     pointer-events: all;
   }
-  .audio-player[data-muted=true] .audio-player__mute {
+  .audio-player[data-muted=true] .audio-player__mute svg {
     fill: red;
   }
   .audio-player[data-muted=true] .audio-player__mute .mute-x-mark {
