@@ -1,0 +1,53 @@
+@import "../../node_modules/@plake492/css_utilities/src/index.scss";
+
+$font-list: (
+  "Mulish/Mulish-VariableFont_wght.ttf",
+  "Mulish/Mulish-VariableFont_wght.ttf"
+);
+
+@each $font in $font-list {
+  @font-face {
+    font-family: "Mulish";
+    src: url("../fonts/#{$font}") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+}
+
+@import "./grid-bg";
+@import "./audio";
+
+:root {
+  --primary-font: "Mulish", sans-serif;
+  --secondary-font: "Mulish", sans-serif;
+}
+
+body {
+  background-color: #ddd;
+  position: relative;
+  min-height: 100vh;
+}
+
+main {
+  min-height: 100vh;
+}
+
+section {
+  backdrop-filter: blur(4px);
+  background: linear-gradient(
+    45deg,
+    rgba(0, 0, 0, 0.2) 0%,
+    rgba(122, 122, 122, 0.6) 75%
+  );
+  overflow: hidden;
+
+  &:not(:last-child) {
+    margin-bottom: $space-xl;
+  }
+}
+
+footer {
+  background-color: #222;
+  color: #ddd;
+}
