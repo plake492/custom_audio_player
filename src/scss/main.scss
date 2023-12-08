@@ -33,20 +33,6 @@ main {
   min-height: 100vh;
 }
 
-section {
-  backdrop-filter: blur(4px);
-  background: linear-gradient(
-    45deg,
-    rgba(0, 0, 0, 0.2) 0%,
-    rgba(122, 122, 122, 0.6) 75%
-  );
-  overflow: hidden;
-
-  &:not(:last-child) {
-    margin-bottom: $space-xl;
-  }
-}
-
 footer {
   background-color: #222;
   color: #ddd;

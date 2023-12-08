@@ -1,5 +1,6 @@
-import { init as audioPlayer } from "@components/audioPlayer"
-import { init as audioPlayerWebComponent } from "@components/audioPlayer_webComponent"
+// import { init as audioPlayer } from "@components/audioPlayer"
+// import { init as audioPlayerWebComponent } from "@components/audioPlayer_webComponent"
+import { init as initAudio } from "@components/audioPlayer_webComponent"
 import "../scss/main.scss"
 
 /**
@@ -7,7 +8,6 @@ import "../scss/main.scss"
  */
 ;((): void => {
   window.addEventListener("load", () => {
-    audioPlayer()
-    audioPlayerWebComponent()
+    initAudio()
   })
 })()
