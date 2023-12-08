@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 export const styles = {
   "custom-audio-player": (className) => `
     :host {
@@ -594,8 +596,8 @@ export const styles = {
     }
     
     .${className} .playback-speed-amount {
-    width: 55px;
-    text-align: center;
+      width: 55px;
+      text-align: center;
     }
     .${className} .playback-speed-wrapper {
       padding: 0.25rem 0.5rem;
@@ -656,6 +658,7 @@ export const styles = {
     border-radius: 50%;
     box-shadow: -807px 0 0 800px var(--track-selected-color);
     }
+
     .${className} input[type=range]:hover::-webkit-slider-thumb,
     .${className} input[type=range]:hover::-moz-range-thumb {
     margin-top: -6px; /* Centers thumb on the track */

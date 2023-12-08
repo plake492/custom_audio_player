@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 export const scopedQuerySelector = (element, selector) => {
   const audioEl = element.querySelector("audio")
   const playBtnEl = element.querySelector(".play")
